@@ -21,7 +21,7 @@ body{
   background-image: url("/immagini/sfondo2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100% 100%
+  background-size: contain;
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
