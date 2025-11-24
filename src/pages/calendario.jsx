@@ -23,7 +23,7 @@ export default function SearchRCalendariooute() {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            console.log(data.length);
             setCaselle(data);
         })
         .catch(err => console.error(err));
@@ -73,9 +73,6 @@ export default function SearchRCalendariooute() {
                 transition={{ duration: 0.2, ease: "easeOut" }}
             >
                 <div className={`corpo ${caselle&&caselle.length>0?'pieno':'vuoto'}`}>
-                    {caselle && caselle.length==0 && 
-                        <label htmlFor="">Non siamo ancora a Dicembre!</label>
-                    }
                     {caselle && caselle.length>0 && caselle.map((c,i)=>(
                         <div key={i}>
                             <button onClick={()=>(selezionato(c))} /* disabled={c.Completata === 1} */ className={`${c.Completata === 1?'Completata':''}`}>
@@ -84,6 +81,9 @@ export default function SearchRCalendariooute() {
                             </button>
                         </div>
                     ))}
+                    {caselle && caselle.length==0 && 
+                        <label htmlFor="">Non siamo ancora a Dicembre!</label>
+                    }
                 </div>
             </motion.div>
         </div>
