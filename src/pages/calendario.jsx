@@ -14,7 +14,7 @@ export default function SearchRCalendariooute() {
         mostraCalendario();
     },[]);
 
-    const [caselle,setCaselle] = useState([]);
+    const [caselle,setCaselle] = useState(null);
 
     const mostraCalendario =()=>{
         fetch(`${import.meta.env.VITE_API_URL}/api/caselle`,{
@@ -73,10 +73,10 @@ export default function SearchRCalendariooute() {
                 transition={{ duration: 0.2, ease: "easeOut" }}
             >
                 <div className={`corpo ${caselle.length>0?'pieno':'vuoto'}`}>
-                    {caselle.length==0 && 
+                    {caselle && caselle.length==0 && 
                         <label htmlFor="">Non siamo ancora a Dicembre!</label>
                     }
-                    {caselle.length>0 && caselle.map((c,i)=>(
+                    {caselle && caselle.length>0 && caselle.map((c,i)=>(
                         <div key={i}>
                             <button onClick={()=>(selezionato(c))} /* disabled={c.Completata === 1} */ className={`${c.Completata === 1?'Completata':''}`}>
                                 <label htmlFor="">{c.ID}</label>
