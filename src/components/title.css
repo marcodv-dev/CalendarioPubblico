@@ -3,7 +3,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
-    >*{margin: auto;}
+    >*{
+        margin: auto;
+        transition: all 1s ease;
+    }
     >.esterno{
         width: 5%;
     }
