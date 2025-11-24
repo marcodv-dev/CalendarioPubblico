@@ -72,7 +72,7 @@ export default function SearchRCalendariooute() {
                 exit={{ opacity: 0, y: 30 }}
                 transition={{ duration: 0.2, ease: "easeOut" }}
             >
-                <div className={`corpo ${caselle.length>0?'pieno':'vuoto'}`}>
+                <div className={`corpo ${caselle&&caselle.length>0?'pieno':'vuoto'}`}>
                     {caselle && caselle.length==0 && 
                         <label htmlFor="">Non siamo ancora a Dicembre!</label>
                     }
