@@ -1,0 +1,30 @@
+
+.Dettagli_casella{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .Descrizione{
+        background-color: white;
+        flex: 1;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        border-radius: 1em;
+        margin: 20px 10% 50px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        h4{
+            position: absolute;
+            right: 0;
+            margin-right: 20px;
+            margin-top: 10px;
+            font-family: 'Dancing Script', cursive;
+        }
+        p{
+            margin: auto;
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+            white-space: pre-wrap; /* rispetta ritorni a capo e spazi multipli */
+            word-wrap: break-word;
+        }
+    }
+}
