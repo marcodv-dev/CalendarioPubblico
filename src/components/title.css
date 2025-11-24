@@ -5,7 +5,6 @@
     margin: 0;
     >*{
         margin: auto;
-        transition: all 1s ease;
     }
     >.esterno{
         width: 5%;
