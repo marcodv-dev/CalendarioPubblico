@@ -17,7 +17,7 @@ export default function SearchRCalendariooute() {
     const [caselle,setCaselle] = useState([]);
 
     const mostraCalendario =()=>{
-        fetch("http://localhost:3001/api/caselle",{
+        fetch(`${import.meta.env.VITE_API_URL}/api/caselle`,{
             method:"GET",
             headers:{ "Content-Type": "application/json" },
         })
@@ -47,7 +47,7 @@ export default function SearchRCalendariooute() {
     }
 
     const completata=(ID)=>{
-        fetch("http://localhost:3001/api/casella_completata",{
+        fetch(`${import.meta.env.VITE_API_URL}/api/casella_completata`,{
             method:"POST",
             headers:{ "Content-Type": "application/json" },
             body:JSON.stringify({ id: ID })
