@@ -23,7 +23,7 @@ export default function SearchRCalendariooute() {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data.length);
+            console.log("length: "+data.length);
             setCaselle(data);
         })
         .catch(err => console.error(err));
