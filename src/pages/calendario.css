@@ -73,11 +73,12 @@
     }
 }
 .corpo.vuoto{
+    flex: 1;
     background-color: white;
     height: calc(100vh - 300px);
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 1em;
-    margin: 20px 10% 80px;
+    margin: 20px 10% auto;
     display: flex;
     label{
         margin: auto;
