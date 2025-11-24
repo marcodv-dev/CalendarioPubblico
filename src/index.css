@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
 }
 body{
-  background-image: url("http://localhost:3001/immagini/sfondo.jpg");
+  background-image: url(`${import.meta.env.VITE_API_URL}/immagini/sfondo.jpg`);
   background-repeat: no-repeat;
   background-size: cover;
 }
