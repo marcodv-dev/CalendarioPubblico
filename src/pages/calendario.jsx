@@ -93,7 +93,7 @@ export default function SearchRCalendariooute() {
                             border: '5px solid rgba(0,0,0,0.1)',
                             borderTop: '4px solid #000000ff',
                             borderRadius: '50%',
-                            animation: 'spin 0.5s linear infinite'
+                            animation: 'spin 1s linear infinite'
                             }}></div>
                         </div>
                     }
