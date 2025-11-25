@@ -25,15 +25,15 @@ h1,h2{
 h1{
     font-family: 'Dancing Script', cursive;
     text-transform: capitalize;
-    font-size: 50px;
+    font-size: 60px;
     font-style: italic;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px;
 }
 h2{
     font-family: 'Dancing Script', cursive;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 40px;
     font-style: italic;
     text-align: center;
     margin-bottom: 20px;
@@ -57,9 +57,9 @@ h2{
 
 @media (max-width: 800px){
     .Titolo h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .Titolo h2{
-        font-size: 30px;
+        font-size: 20px;
     }
 }
