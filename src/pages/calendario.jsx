@@ -24,7 +24,7 @@ export default function SearchRCalendariooute() {
         .then(res => res.json())
         .then(data => {
             console.log("length: "+data.length);
-            setCaselle(data);
+            if(data.length>0) setCaselle(data);
         })
         .catch(err => console.error(err));
     }
@@ -81,7 +81,7 @@ export default function SearchRCalendariooute() {
                             </button>
                         </div>
                     ))}
-                    {caselle && caselle.length==0 && 
+                    {!caselle/*  && caselle.length==0 */ && 
                         <label htmlFor="">Non siamo ancora a Dicembre!</label>
                     }
                 </div>
