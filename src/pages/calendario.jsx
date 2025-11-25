@@ -81,8 +81,23 @@ export default function SearchRCalendariooute() {
                             </button>
                         </div>
                     ))}
-                    {!caselle/*  && caselle.length==0 */ && 
+                    {caselle  && caselle.length==0 && 
                         <label htmlFor="">Non siamo ancora a Dicembre!</label>
+                    }
+                    {!caselle && 
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                            {/* Loader CSS */}
+                            <div className="spinner" style={{
+                            width: '40px',
+                            height: '40px',
+                            border: '4px solid rgba(0,0,0,0.1)',
+                            borderTop: '4px solid #3498db',
+                            borderRadius: '50%',
+                            animation: 'spin 1s linear infinite',
+                            marginBottom: '10px'
+                            }}></div>
+                            <label>Non siamo ancora a Dicembre!</label>
+                        </div>
                     }
                 </div>
             </motion.div>
