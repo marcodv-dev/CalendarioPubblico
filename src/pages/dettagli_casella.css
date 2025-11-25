@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .Dettagli_casella{
     display: flex;
@@ -22,8 +23,7 @@
         p{
             margin: auto;
             padding: 20px;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: "Nunito", sans-serif;
             font-size: 20px;
             white-space: pre-wrap; /* rispetta ritorni a capo e spazi multipli */
             word-wrap: break-word;
