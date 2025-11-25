@@ -85,6 +85,15 @@
         font-size: 30px;
     }
 }
+.corpo.nullo{
+    height: calc(100vh - 300px);
+    margin: 0;
+    display: flex;
+    background-color: blueviolet;
+    >*{
+        margin: auto;
+    }
+}
 
 @media (max-width: 1000px) {
     .corpo.pieno {

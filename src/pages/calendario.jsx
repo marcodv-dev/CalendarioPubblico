@@ -88,13 +88,12 @@ export default function SearchRCalendariooute() {
                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             {/* Loader CSS */}
                             <div className="spinner" style={{
-                            width: '40px',
-                            height: '40px',
-                            border: '4px solid rgba(0,0,0,0.1)',
-                            borderTop: '4px solid #3498db',
+                            width: '50px',
+                            height: '50px',
+                            border: '5px solid rgba(0,0,0,0.1)',
+                            borderTop: '4px solid #000000ff',
                             borderRadius: '50%',
-                            animation: 'spin 1s linear infinite',
-                            marginBottom: '10px'
+                            animation: 'spin 0.5s linear infinite'
                             }}></div>
                         </div>
                     }
