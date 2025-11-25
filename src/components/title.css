@@ -9,6 +9,12 @@
     >.esterno{
         width: 5%;
     }
+    .esterno.uno{
+        margin-left: 10px;
+    }
+    .esterno.due{
+        margin-right: 10px;
+    }
 }
 h1,h2{
     color: #fff;
