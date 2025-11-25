@@ -2,7 +2,6 @@
 .Titolo{
     display: flex;
     justify-content: space-between;
-    height: 200px;
     margin: 0;
     >*{
         margin: auto;

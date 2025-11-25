@@ -8,14 +8,14 @@
 }
 .corpo.pieno{
     flex: 1;
-    height: auto;
+    height: 100%;
     /* background-color: aqua; */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     /* grid-auto-rows: 1fr; */
     grid-auto-rows: auto;
     gap: 20px;
-    margin: 0 20px 40px;
+    margin: 0 20px 0px;
     overflow-y: auto;
     div{
         /* background-color: brown; */
