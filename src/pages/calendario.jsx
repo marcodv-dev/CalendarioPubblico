@@ -24,7 +24,7 @@ export default function SearchRCalendariooute() {
         .then(res => res.json())
         .then(data => {
             console.log("length: "+data.length);
-            // if(data.length>0) setCaselle(data);
+            if(data.length>0) setCaselle(data);
         })
         .catch(err => console.error(err));
     }
@@ -62,8 +62,6 @@ export default function SearchRCalendariooute() {
     return(
         
         <div className="Calendario">
-            {/* <h1>2° calendario dell'avvento</h1>
-            <h2>Anna Nodari - 2025</h2> */}
             <Title mostraBack={false}></Title>
             <motion.div
                 className="Calendario"
