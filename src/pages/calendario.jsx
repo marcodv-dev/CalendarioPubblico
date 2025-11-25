@@ -73,7 +73,7 @@ export default function SearchRCalendariooute() {
                 <div className={`corpo ${!caselle?'nullo':(caselle.length>0?'pieno':'vuoto')}`}>
                     {caselle && caselle.length>0 && caselle.map((c,i)=>(
                         <div key={i}>
-                            <button onClick={()=>(selezionato(c))} /* disabled={c.Completata === 1} */ className={`${c.Completata === 1?'Completata':''}`}>
+                            <button onClick={()=>(selezionato(c))} /* disabled={c.Completata === 1} */ className={`${c.Completata?'Completata':''}`}>
                                 <label htmlFor="">{c.ID}</label>
                                 <img src={cuore} alt="" />
                             </button>
