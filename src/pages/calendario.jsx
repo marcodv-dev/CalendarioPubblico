@@ -37,7 +37,7 @@ export default function SearchRCalendariooute() {
         console.log("click");
         console.log(ID,foto,descrizione);
 
-        //completata(c.ID);
+        completata(c.ID);
 
         navigate("/dettagli_casella", {
             state: {
