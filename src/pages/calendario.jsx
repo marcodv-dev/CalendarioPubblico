@@ -96,7 +96,6 @@ export default function SearchRCalendariooute() {
                             animation: 'spin 1s linear infinite',
                             marginBottom: '10px'
                             }}></div>
-                            <label>Non siamo ancora a Dicembre!</label>
                         </div>
                     }
                 </div>
