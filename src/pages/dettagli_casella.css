@@ -22,8 +22,9 @@
             font-family: 'Dancing Script', cursive;
         }
         p{
-            margin: 10px auto auto auto;
+            margin: auto;
             padding: 20px;
+            padding-top: 40px;
             font-family: "Nunito", sans-serif;
             font-size: 20px;
             white-space: pre-wrap; /* rispetta ritorni a capo e spazi multipli */
