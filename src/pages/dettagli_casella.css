@@ -12,6 +12,7 @@
         margin: 20px 10% 50px;
         display: flex;
         flex-direction: column;
+        gap: 10px;
         position: relative;
         h4{
             position: absolute;
