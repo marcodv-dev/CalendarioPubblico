@@ -2,17 +2,11 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Title } from '../components/title.jsx'
-import Back from '../assets/left-arrow.png'
 import '../pages/dettagli_casella.css'
 
 export default function Dettagli_casella(){
-    const navigate = useNavigate();
     const location = useLocation();
     const { ID, foto, descrizione } = location.state || {};
-
-    const back =()=>{
-        navigate("/home");
-    }
 
 
     return(

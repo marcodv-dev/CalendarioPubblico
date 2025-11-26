@@ -10,7 +10,6 @@
         border: 2px solid rgba(0, 0, 0, 0.3);
         border-radius: 1em;
         margin: 20px 10% 50px;
-        display: flex;
         position: relative;
         h4{
             position: absolute;
@@ -20,7 +19,6 @@
             font-family: 'Dancing Script', cursive;
         }
         p{
-            margin: auto;
             padding: 20px;
             margin-top: 100px;
             font-family: "Nunito", sans-serif;
