@@ -34,6 +34,7 @@ export default function Dettagli_casella(){
                         <p className="paragrafoNatale"><b>Sei la mia vita</b>, intendo che tutta la mia vita gira attorno a te, quando mi succede qualcosa sei la prima che lo sa, molte volte anche l'unica, la mia feicità dipende dalla tua e amo vederti felice</p>
                         <p className="paragrafoNatale"><b>Mi manchi</b>, sempre, tantissimo, ma intendo che ti immagino qui vicino a me per sentire meno la tua mancanza, immagino i tuoi occhi mentre mi guardi, la tua voce, il tuo sorriso</p>
                         <p className="paragrafoNatale">L'ultima cosa che volevo dirti è che per tutti questi giorni, in ogni pensiero, <b>non ho mai finito una singola frase con un punto</b>, questo perché voglio che tra noi non finisca mai, che continui per sempre e farò di tutto perché accada ❤️❤️❤️❤️❤️❤️</p>
+                        <div className="spazioNatale"></div>
                     </div>}
                     
                 </motion.div>
