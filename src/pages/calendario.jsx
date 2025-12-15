@@ -10,6 +10,16 @@ import { Title } from "../components/title.jsx";
 export default function SearchRCalendariooute() {
     const navigate = useNavigate();
 
+    const now = new Date();
+    const romaDate = new Date(
+      now.toLocaleString("en-US", { timeZone: "Europe/Rome" })
+    );
+
+    const giorno = romaDate.getDate();
+    const mese = romaDate.getMonth() + 1;
+    const isDicembre = mese === 12;
+    const is25Dicembre = mese === 12 && giorno-1 === 14;
+
     useEffect(()=>{
         mostraCalendario();
     },[]);
@@ -41,7 +51,7 @@ export default function SearchRCalendariooute() {
 
         navigate("/dettagli_casella", {
             state: {
-                ID,foto,descrizione
+                ID,foto,descrizione,isDicembre,is25Dicembre
             },
         });
     }
@@ -82,7 +92,7 @@ export default function SearchRCalendariooute() {
                     {caselle  && caselle.length==0 && 
                         <label htmlFor="">Non siamo ancora a Dicembre!</label>
                     }
-                    {!caselle && 
+                    {!caselle &&
                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             {/* Loader CSS */}
                             <div className="spinner" style={{
