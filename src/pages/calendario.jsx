@@ -17,8 +17,8 @@ export default function SearchRCalendariooute() {
 
     const giorno = romaDate.getDate();
     const mese = romaDate.getMonth() + 1;
-    const isDicembre = mese === 12;
-    const is25Dicembre = mese === 12 && giorno === 25;
+    const isDicembre = mese >= 12;
+    const is25Dicembre = mese === 12 && giorno >= 25;
 
     useEffect(()=>{
         mostraCalendario();
